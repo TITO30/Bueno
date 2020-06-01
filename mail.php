@@ -10,11 +10,14 @@ $nombre=$_POST["Nombre"];
 $correo=$_POST["Correo"];
 $telefono=$_POST["Telefono"];
 $archivo=$_POST["Archivo"];
+$header.="X-Mailer: PHP/: phpversion();
 
 $contenido="Nombre: " . $nombre . "\nArea de interés: " . $asunto . "\nCorreo: " . $correo . "\nTeléfono: " . $telefono;
 
-mail($destino,"Gestión Ciudadana",$contenido)
-header("Location:index.html")
+$mail=mail($destino,"Gestión Ciudadana",$contenido,$header);
+if($mail){
+echo "<h4>Mail enviado exitosamente</h4>"; }
+
 
 
 
