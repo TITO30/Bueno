@@ -252,9 +252,16 @@ hr {
     }
 }
 
-@media(max-width:400px) {
+@media(max-width:1000px) {
     form {
-        width: 100px;
+        width: 250px;
+        margin: auto;
+        background: rgba(16, 19, 12, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 20px;
+        margin-bottom: 25px;
     }
 }
 
