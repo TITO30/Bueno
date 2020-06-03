@@ -4,7 +4,7 @@
 
 
 
-$destino="moralestito569@gmail.com";
+$destino="chorizoazul30@gmail.com";
 $asunto=$_POST["area"];
 $nombre=$_POST["Nombre"];
 $correo=$_POST["Correo"];
